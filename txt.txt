@@ -1,0 +1,208 @@
+ <div class="row">
+    <!-- /.col -->
+    <div class="col-12 col-sm-6 col-md-4">
+        <div class="info-box mb-3">
+        <span class="info-box-icon bg-success elevation-1"><i class="fas fa-money-bill"></i></span>
+
+        <div class="info-box-content">
+            <span class="info-box-text">Balance</span>
+            <span class="info-box-number"> Unit</span>
+        </div>
+        <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+
+    <!-- fix for small devices only -->
+    <div class="clearfix hidden-md-up"></div>
+
+    <div class="col-12 col-sm-6 col-md-4">
+        <div class="info-box mb-3">
+        <span class="info-box-icon bg-info elevation-1"><i class="fas fa-arrow-alt-circle-down"></i></span>
+
+        <div class="info-box-content">
+            <span class="info-box-text">Deposits</span>
+            <span class="info-box-number"> Unit</span>
+        </div>
+        <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+
+
+    <div class="col-12 col-sm-6 col-md-4">
+        <div class="info-box">
+        <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-arrow-alt-circle-up"></i></span>
+
+        <div class="info-box-content">
+            <span class="info-box-text">Withdraw</span>
+            <span class="info-box-number">
+             Unit
+            </span>
+        </div>
+        <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+
+
+    <!-- /.col -->
+    {{-- <div class="col-12 col-sm-6 col-md-3">
+        <div class="info-box mb-3">
+        <span class="info-box-icon bg-primary elevation-1"><i class="far fa-list-alt"></i></span>
+
+        <div class="info-box-content">
+            <span class="info-box-text">Total Commision</span>
+            <span class="info-box-number"></span>
+        </div>
+        <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div> --}}
+    <!-- /.col -->
+</div>
+
+
+
+
+
+
+///////////
+
+
+
+ if ($first_price) {
+                    Thaidpricenumber::create([
+                        'thaidprice_id' => $ThaidPrice[0]->id,
+                        'winning_number' => $first_price,
+                        'thaidsection_id' => $sectionId,
+                    ]);
+                }
+
+                if ($first_three_price) {
+                    $firstthreenumber = explode(',', $first_three_price);
+                    foreach ($firstthreenumber as $num) {
+                        Thaidpricenumber::create([
+                            'thaidprice_id' => $ThaidPrice[1]->id,
+                            'winning_number' => $num,
+                            'thaidsection_id' => $sectionId,
+                        ]);
+                    }
+                }
+
+                if ($last_three_price) {
+                    $lastthreenumber = explode(',', $last_three_price);
+                    foreach ($lastthreenumber as $num) {
+                        Thaidpricenumber::create([
+                            'thaidprice_id' => $ThaidPrice[2]->id,
+                            'winning_number' => $num,
+                            'thaidsection_id' => $sectionId,
+                        ]);
+                    }
+                }
+
+
+                if ($last_two_price) {
+                    $lasttwonumber = explode(',', $last_two_price);
+                    foreach ($lasttwonumber as $num) {
+                        Thaidpricenumber::create([
+                            'thaidprice_id' => $ThaidPrice[3]->id,
+                            'winning_number' => $num,
+                            'thaidsection_id' => $sectionId,
+                        ]);
+                    }
+                }
+
+
+
+                if ($side_first_price) {
+                    $sidefirstnumber = explode(',', $side_first_price);
+                    foreach ($sidefirstnumber as $num) {
+                        Thaidpricenumber::create([
+                            'thaidprice_id' => $ThaidPrice[4]->id,
+                            'winning_number' => $num,
+                            'thaidsection_id' => $sectionId,
+                        ]);
+                    }
+                }
+
+
+                if ($second_price) {
+                    $secondpricenumber = explode(',', $second_price);
+                    foreach ($secondpricenumber as $num) {
+                        Thaidpricenumber::create([
+                            'thaidprice_id' => $ThaidPrice[5]->id,
+                            'winning_number' => $num,
+                            'thaidsection_id' => $sectionId,
+                        ]);
+                    }
+                }
+
+
+                if ($third_price) {
+                    $thirdpricenumber = explode(',', $third_price);
+                    foreach ($thirdpricenumber as $num) {
+                        Thaidpricenumber::create([
+                            'thaidprice_id' => $ThaidPrice[6]->id,
+                            'winning_number' => $num,
+                            'thaidsection_id' => $sectionId,
+                        ]);
+                    }
+                }
+
+                if ($fourth_price) {
+                    $fourthpricenumber = explode(',', $fourth_price);
+                    foreach ($fourthpricenumber as $num) {
+                        Thaidpricenumber::create([
+                            'thaidprice_id' => $ThaidPrice[7]->id,
+                            'winning_number' => $num,
+                            'thaidsection_id' => $sectionId,
+                        ]);
+                    }
+                }
+
+                if ($fifth_price) {
+                    $fifthpricenumber = explode(
+                        ',',
+                        $fifth_price
+                    );
+                    foreach ($fifthpricenumber as $num) {
+                        Thaidpricenumber::create([
+                            'thaidprice_id' => $ThaidPrice[8]->id,
+                            'winning_number' => $num,
+                            'thaidsection_id' => $sectionId,
+                        ]);
+                    }
+                }
+
+
+                <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between mt-1">
+                        <h6 class="thai-header ms-2 mt-2">Choose Date First </h6>
+                        <div class="thai-box">
+                            <!-- <h6 class="thai-text">(24-03-2023)</h6> -->
+                            <select v-model="section" class="form-control w-100" required @change="handleSectionChange()">
+                                <option>Choose Date</option>
+                                <option :value="ThaidSection.id">{{
+                                    ThaidSection.opening_date }}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="d-flex">
+                            <input v-model="userNumber" required type="number" class="thai-search"
+                                placeholder="Check your Lottery ticket" />
+                            <button @click="handleWinningNumber()" class="btn btn-outline-danger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>

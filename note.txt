@@ -1,0 +1,28 @@
+sections -> done 
+
+bet tot amount + to user balance when reject bet log or slips
+25.3539097
+
+97.4491518
+
+types => done 
+
+------------------------
+schedules
+------------------------
+status => done .delete => done 
+
+------------------------
+section
+------------------------
+commision =>  {
+
+    section -> user || agent ( commision ) -> + user ( balance )
+
+}
+
+edit => done 
+
+reward =>  done
+
+block_numbers => edit section page 
