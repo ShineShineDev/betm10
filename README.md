@@ -1,2 +1,2 @@
 ### DOC
-https://github.com/ShineShineDev/betm10/blob/master/DOC/Thaid.md
+https://github.com/ShineShineDev/betm10/tree/master/DOC
